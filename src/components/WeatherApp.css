@@ -1,0 +1,132 @@
+.weather-container {
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  border-radius: 10px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-container h1 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.search-bar input {
+  height: 48px;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding-left: 24px;
+  color: #626262;
+  background-color: #ebfffc;
+  font-size: 18px;
+}
+
+.search-bar img {
+  width: 48px;
+  border-radius: 50%;
+  padding: 16px;
+  background-color: #ebfffc;
+  cursor: pointer;
+}
+.weather-icon {
+  width: 140px;
+  margin: 30px 0;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.location {
+  color: #fff;
+  font-size: 40px;
+}
+
+.weather-data {
+  width: 100%;
+  margin-top: 32px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-data .col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.weather-data .col span {
+  display: block;
+  font-size: 16px;
+}
+
+.weather-data .col img {
+  width: 26px;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  .weather-container {
+    padding: 1.2rem;
+    max-width: 290px;
+  }
+  .weather-container h1 {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .temperature {
+    font-size: 36px;
+  }
+  .weather-icon {
+    width: 100px;
+    margin: 18px 0;
+  }
+  .location {
+    font-size: 20px;
+  }
+  .search-bar {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .search-bar input {
+    height: 36px;
+    padding-left: 16px;
+    color: #626262;
+    background-color: #ebfffc;
+    font-size: 16px;
+    width: 180px;
+  }
+
+  .search-bar img {
+    width: 38px;
+    padding: 12px;
+  }
+  .weather-data {
+    margin-top: 24px;
+  }
+  .weather-data .col {
+    font-size: 14px;
+  }
+  .weather-data .col span {
+    font-size: 14px;
+  }
+  .weather-data .col img {
+    width: 24px;
+    margin-top: 8px;
+  }
+}
